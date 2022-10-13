@@ -1,6 +1,6 @@
 import speech_recognition as speechrecog
 
-from operations import get_operator
+from operations import calculate
 
 print("your speech recog version is" + speechrecog.__version__)
 
@@ -27,7 +27,7 @@ voice_input = recognizer.recognize_google(aud)
 
 print(voice_input)
 
-get_operator(voice_input)
+calculate(voice_input)
 
 
 
